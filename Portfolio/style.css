@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #09081c;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 200vh;
+}
+
+.navbar{
+    display: flex;
+    gap: 40px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.navbar .list ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding: 5px 20px;
+    color: white;
+}
+
+.navbar .list ul li{
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.navbar .list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .list ul li:hover{
+    background-color: #830dcd;
+    border-radius: 20px;
+}
+
+.navbar h1{
+    color: #830dcd;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.home .content{
+    padding-bottom: 10px;
+    line-height: 60px;
+}
+
+.home h1{
+    color: #830dcd;
+    font-size: 45px;
+}
+
+.home h2{
+    color: white;
+    font-size: 35px;
+}
+
+.home h3{
+    color: white;
+    font-size: 30px;
+}
+
+.skills{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills .heading h1{
+    display: inline;
+    color: #830dcd;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.skills .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skills .cards .card{
+    width: 150px;
+    height: 200px;
+    background-color: #7822ad;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills .cards .card:hover{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.skills .cards .card img{
+    height: auto;
+    width: 80px;
+}  
+
+.skills .cards .card p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.project{
+    padding-top: 90px;
+}
+
+.project .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project .heading h1{
+    display: inline;
+    color: #830dcd;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.project .box{
+    width:1100px;
+    height: 300px;
+    border: 1px solid #7822ad;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project .box .description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project .box .description h1{
+    color: #7822ad;
+}
+
+.project .box .description p{
+    color: white;
+}
+
+.project .box img{
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.project .box:hover{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.about{
+    padding-top: 90px;
+}
+
+.about .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about .heading h1{
+    display: inline;
+    color: #830dcd;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.about .abox{
+    width:1100px;
+    height: 300px;
+    border: 1px solid #7822ad;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 30px;
+}
+
+.about .abox img{
+    height: 250px;
+    width: 250px;
+    border: 8px solid #7822ad;
+    border-radius: 50%;
+}
+
+.about .abox .aboutme p{
+    color: white;
+    line-height: 25px;
+}
+
+.footer{
+    width: 1263px;
+    background-color: #830dcd;
+    height: 100px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer a{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.footer a i{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width:912px){
+
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 10px 30px;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 911px;
+    }
+
+    .skills .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project{
+        padding-top: 90px;
+        width: 927px;
+    }
+
+    .project .box{
+        width: 848px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about{
+        padding-top: 90px;
+        width: 927px;
+    }
+    
+    .about .abox{
+        width: 848px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer{
+        width: 912px;
+        background-color: #830dcd;
+        height: 100px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home .content{
+        padding-bottom: 10px;
+        padding-top: 15px;
+        line-height: 60px;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 765px;
+    }
+
+    .skills .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project{
+        padding-top: 90px;
+        width: 770px;
+    }
+
+    .project .box{
+        width:704px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about{
+        padding-top: 90px;
+        width: 770px;
+    }
+    
+    .about .abox{
+        width:704px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer{
+        width: 769px;
+        background-color: #830dcd;
+        height: 100px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width:450px){
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px 0px 50px;
+    }
+
+    .home .content{
+        line-height: 40px; 
+        margin-top: 20px;
+    }
+    
+    .home h1{
+        color: #830dcd;
+        font-size: 35px;
+    }
+    
+    .home h2{
+        color: white;
+        font-size: 25px;
+        display: inline;
+    }
+    
+    .home h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .home img{
+        padding-left: 30px;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 599px;
+    }
+
+    .skills .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project{
+        padding-top: 90px;
+        width: 590px;
+    }
+
+    .project .box{
+        width:543px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about{
+        padding-top: 90px;
+        width: 600px;
+    }
+    
+    .about .abox{
+        width:543px;
+        height: 540px;
+        border: 1px solid #7822ad;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about .abox img{
+        height: 260px;
+        width: 230px;
+        border: 8px solid #7822ad;
+        border-radius: 50%;
+    }
+
+    .footer{
+        width: 604px;
+        background-color: #830dcd;
+        height: 100px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
